@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write    # ← ADD THIS - needed to create releases
+      contents: write
 
     steps:
       - name: Checkout
@@ -32,3 +32,4 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
           charts_dir: charts
+          skip_existing: true
