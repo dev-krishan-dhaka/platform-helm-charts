@@ -24,26 +24,36 @@ spec:
           value: {{ .Values.backend.env.DB_HOST }}
         - name: DB_PORT
           value: "{{ .Values.backend.env.DB_PORT }}"
+        {{- if .Values.backend.env.DB_NAME }}
+        - name: DB_NAME
+          value: {{ .Values.backend.env.DB_NAME }}
+        {{- end }}
+        {{- if .Values.backend.env.configMapRef }}
         - name: DB_NAME
           valueFrom:
             configMapKeyRef:
-              name: postgres-config
-              key: POSTGRES_DB
+              name: {{ .Values.backend.env.configMapRef.name }}
+              key: {{ .Values.backend.env.configMapRef.key }}
+        {{- end }}
+        {{- if .Values.backend.env.secretRef }}
         - name: DB_USER
           valueFrom:
             secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_USER
+              name: {{ .Values.backend.env.secretRef.name }}
+              key: {{ .Values.backend.env.secretRef.userKey }}
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_PASSWORD
+              name: {{ .Values.backend.env.secretRef.name }}
+              key: {{ .Values.backend.env.secretRef.passwordKey }}
+        {{- if .Values.backend.env.secretRef.jwtKey }}
         - name: JWT_SECRET
           valueFrom:
             secretKeyRef:
-              name: postgres-secret
-              key: JWT_SECRET
+              name: {{ .Values.backend.env.secretRef.name }}
+              key: {{ .Values.backend.env.secretRef.jwtKey }}
+        {{- end }}
+        {{- end }}
         - name: PORT
           value: "{{ .Values.backend.port }}"
         resources:

@@ -2,7 +2,7 @@ apiVersion: v2
 name: backend-service
 description: Reusable Helm chart for any Node.js backend service
 type: application
-version: 1.0.2
+version: 1.0.3
 appVersion: "1.0.0"
 keywords:
   - backend
