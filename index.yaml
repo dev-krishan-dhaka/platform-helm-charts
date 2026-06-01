@@ -3,6 +3,26 @@ entries:
   backend-service:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-06-01T10:46:11.785403705Z"
+    description: Reusable Helm chart for any Node.js backend service
+    digest: 4971fc13c24d98d1a10c97a0d0e780e83ea6ec236e773df6372c475270ddd198
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - backend
+    - nodejs
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: backend-service
+    sources:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/backend-service-1.0.3/backend-service-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-06-01T06:48:50.667150052Z"
     description: Reusable Helm chart for any Node.js backend service
     digest: 7360a61d317b3567a1aa3fd1a98b92351d50b214da953b4b6d4d3ee20f07bc97
@@ -142,4 +162,4 @@ entries:
     urls:
     - https://dev-krishan-dhaka.github.io/platform-helm-charts/postgres-1.0.1.tgz
     version: 1.0.1
-generated: "2026-06-01T06:48:51.075407698Z"
+generated: "2026-06-01T10:46:11.785427721Z"
