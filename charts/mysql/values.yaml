@@ -1,0 +1,25 @@
+namespace: default
+
+mysql:
+  name: mysql
+  image:
+    repository: mysql
+    tag: "8.4"
+  replicas: 1
+  port: 3306
+  service:
+    type: ClusterIP
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "256Mi"
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+  pvc:
+    enabled: true
+    storageSize: "1Gi"
+    storageClass: "local-path"
+  credentials:
+    database: crud_db
+    rootPassword: root
