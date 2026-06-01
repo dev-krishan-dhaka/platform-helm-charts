@@ -9,6 +9,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write    # ← ADD THIS - needed to create releases
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
