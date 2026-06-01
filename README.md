@@ -275,3 +275,4 @@ Currently, if you set the upload URL incorrectly, let's say to something like `h
 It appears like the [go-github Do call](https://github.com/google/go-github/blob/master/github/github.go#L520) does not catch the fact that the upload URL is incorrect and pass back the expected error. If the asset upload fails, it would be better if the release was rolled back (deleted) and an appropriate log message is be displayed to the user.
 
 The `cr index` command should also generate a warning when a release has no assets attached to it, to help people detect and troubleshoot this type of problem.
+ 
