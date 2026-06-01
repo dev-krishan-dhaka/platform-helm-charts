@@ -1,6 +1,16 @@
 apiVersion: v2
 name: postgres
-description: PostgreSQL chart with PVC support
+description: PostgreSQL Helm chart with PVC and Secret support
 type: application
 version: 1.0.0
 appVersion: "15"
+keywords:
+  - postgres
+  - database
+  - kubernetes
+home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+sources:
+  - https://github.com/dev-krishan-dhaka/platform-helm-charts
+maintainers:
+  - name: dev-krishan-dhaka
+    email: devdhaka2341@gmail.com
