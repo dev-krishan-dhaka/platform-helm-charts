@@ -105,6 +105,24 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.4"
+    created: "2026-06-01T11:07:22.290127018Z"
+    description: MySQL chart with PVC support
+    digest: 775ec6c464a592681849b14c130a1d3165fac1c518edc51e8e614f81dff33943
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - mysql
+    - database
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: mysql
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/mysql-1.0.1/mysql-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: "8.4"
     created: "2026-06-01T06:48:50.957093508Z"
     description: MySQL chart with PVC support
     digest: 08a370e9e67ab676cab0da80ae942b91c22a929af077576c1c92436119a0452f
@@ -162,4 +180,4 @@ entries:
     urls:
     - https://dev-krishan-dhaka.github.io/platform-helm-charts/postgres-1.0.1.tgz
     version: 1.0.1
-generated: "2026-06-01T10:46:11.785427721Z"
+generated: "2026-06-01T11:07:22.29014828Z"
