@@ -3,6 +3,26 @@ entries:
   backend-service:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-06-01T06:48:50.667150052Z"
+    description: Reusable Helm chart for any Node.js backend service
+    digest: 7360a61d317b3567a1aa3fd1a98b92351d50b214da953b4b6d4d3ee20f07bc97
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - backend
+    - nodejs
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: backend-service
+    sources:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/backend-service-1.0.2/backend-service-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-06-01T11:41:14.585307056+05:30"
     description: Reusable Helm chart for any Node.js backend service
     digest: 044cccb36cd485a8c95eea7105cea65afa68b4e5e1bee1c112df387fe875154d
@@ -24,6 +44,26 @@ entries:
   frontend-service:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-06-01T06:48:50.814491846Z"
+    description: Reusable Helm chart for any React frontend service
+    digest: ded1c48ecc54e1dd3c37d6ea1a3683536293588328b216f16a867b9c5f193d11
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - frontend
+    - react
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: frontend-service
+    sources:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/frontend-service-1.0.2/frontend-service-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-06-01T11:41:14.585662405+05:30"
     description: Reusable Helm chart for any React frontend service
     digest: d687cc7f087093027f59059f4532d6a0118348362f08768c65006374930c1707
@@ -42,7 +82,46 @@ entries:
     urls:
     - https://dev-krishan-dhaka.github.io/platform-helm-charts/frontend-service-1.0.1.tgz
     version: 1.0.1
+  mysql:
+  - apiVersion: v2
+    appVersion: "8.4"
+    created: "2026-06-01T06:48:50.957093508Z"
+    description: MySQL chart with PVC support
+    digest: 08a370e9e67ab676cab0da80ae942b91c22a929af077576c1c92436119a0452f
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - mysql
+    - database
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: mysql
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/mysql-1.0.0/mysql-1.0.0.tgz
+    version: 1.0.0
   postgres:
+  - apiVersion: v2
+    appVersion: "15"
+    created: "2026-06-01T06:48:51.075385195Z"
+    description: PostgreSQL Helm chart with PVC and Secret support
+    digest: 8aaf0fdc855cc18ddf502e27261744db717bc1d21d447c471828cf1e4303e2e5
+    home: https://github.com/dev-krishan-dhaka/platform-helm-charts
+    keywords:
+    - postgres
+    - database
+    - kubernetes
+    maintainers:
+    - email: devdhaka2341@gmail.com
+      name: dev-krishan-dhaka
+    name: postgres
+    sources:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts
+    type: application
+    urls:
+    - https://github.com/dev-krishan-dhaka/platform-helm-charts/releases/download/postgres-1.0.2/postgres-1.0.2.tgz
+    version: 1.0.2
   - apiVersion: v2
     appVersion: "15"
     created: "2026-06-01T11:41:14.58596853+05:30"
@@ -63,4 +142,4 @@ entries:
     urls:
     - https://dev-krishan-dhaka.github.io/platform-helm-charts/postgres-1.0.1.tgz
     version: 1.0.1
-generated: "2026-06-01T11:41:14.58467102+05:30"
+generated: "2026-06-01T06:48:51.075407698Z"
